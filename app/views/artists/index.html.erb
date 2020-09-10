@@ -1,0 +1,9 @@
+<h1><%= @billboard.name %> Artist</h1>
+<%= link_to 'Add music', new_billboard_artist_path(@billboard) %>
+<ul>
+  <% @billboard.each do |artist| %>
+    <li>
+      <%= link_to artist.title, [@billboard, artist] %>
+    </li>
+  <% end %>
+</ul>

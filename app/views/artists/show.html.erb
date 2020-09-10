@@ -1,0 +1,8 @@
+<h1><%= @billboard.name %> <%= @artist.title %> </h1>
+<br />
+<p>
+  <%= @artist.body %>
+</p>
+<%= link_to 'Edit Artist', edit_sub_topic_path([@billboard, @artist]) %>
+<%= link_to 'Delete Artist', [@billboard, @artist], method: :delete %>
+<%= link_to 'Music', artist_music_path(@artist) %>

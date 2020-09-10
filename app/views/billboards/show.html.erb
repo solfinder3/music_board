@@ -1,0 +1,7 @@
+<h1><%= Billboard.name %></h1>
+<p>what would you like to do with this Artist?</p>
+<%= link_to 'Edit Billboard', edit_billboard_path(@billboard)%>
+<br />
+<%= link_to 'Delete Billboard', @billboard, method: :delete %>
+<br />
+<%= link_to 'View other Artists', billboard_artist_path(@billboard)%>
